@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+</head>
+<body>
+        {% for item in bike %}
+        <b> Bike number {{loop.index}}</b><br><br>
+        <b>Model</b> {{item.model}}<br><br>
+        <b>Daily fee (VND)</b> {{item.fee}} <br><br>
+        <b>Image</b> <img src={{item.link}}> <br><br>
+        <b>Year</b> {{item.year}} <br><br>
+        <hr>
+        {% endfor %}
+</body>
+</html>
